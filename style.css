@@ -1,0 +1,204 @@
+body
+{
+    margin:0;
+    padding: 0;
+}
+
+/*---------------------- Navigation Bar---------------------*/
+nav{
+    width: 100%;
+    background:black;
+}
+ul{
+    
+    width: 80%;
+    margin: 0 20px;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    display: inline-block ;
+    padding: 20px;
+    font-size: 20px;
+}
+.active
+{
+    display: block;
+}
+ul li:hover
+{background: green;}
+
+ul li a{
+    color: honeydew;
+    text-decoration: none;
+}
+.toggle
+{
+    width: 100%;
+    padding: 10px 20px;
+    background: black;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+/*---------------------Banner--------------------------------*/
+.mySlides
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
+	width: 100%;
+	height: 300px;  
+	margin-top: 0px;
+	background-position: center;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.text
+{
+	position: absolute;
+    top: 20%;
+    left: 45%;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+.mySlides .text .sub
+{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+/*-------------------------Text-----------------------------*/
+.code
+{
+	text-align: center;
+
+}
+.text2
+{
+	padding: 25px 50px 25px 25px;
+}
+
+/*--------------------------------Grid Image Column-----------------------------------*/
+.t2{
+    margin-left: 30px;
+    text-align: center;
+}
+.column
+{
+	float: left;
+	width: 40%;
+	padding: 25px 50px 25px 25px;
+}
+.column img
+{
+	margin-top:12px;
+	margin-left: 10px;
+	height: 300px;
+	width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---------------------------------Footer Section---------------------------------------------*/
+
+.footer-bot
+{
+  
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+   height: 250px;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.bottom-txt
+{
+	padding: 40px 50px 35px 25px;
+}
+
+
+
+/*------------------------------- media Query --------------------------*/
+@media (max-width:768px)
+{
+    .toggle
+    {
+        display: block;
+    }
+    ul
+    {
+        width: 100%;
+        display: none;
+    }
+    ul li
+    {
+        display: block;
+        text-align: center;
+    }
+    .text{
+		margin-left:-10%;
+		margin-top:-5%;
+	}
+    .column
+        {
+            float: left;
+            width: 34%;
+            margin-left: 30px; 
+        }
+        .column img
+        {
+            width:100%;
+        }
+
+}
+
+@media (max-width:540px)
+{
+    .toggle
+    {
+        display: block;
+    }
+    ul
+    {
+        width: 100%;
+        display: none;
+    }
+    ul li
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .text{
+		margin-left:-15%;
+		margin-top:-5%;
+	}
+    .column
+{
+	float: left;
+	width: 53%;
+	margin-left: 27px;
+	
+	
+}
+.column img
+{
+	width:135%;
+	height:200px;
+}
+.footer-bot
+{
+    width:100%;
+   height: 350px;
+}
+   
+}
