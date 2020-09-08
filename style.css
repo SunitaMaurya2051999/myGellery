@@ -1,0 +1,329 @@
+/* .nav
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+	list-style-type: none;
+}
+.nav a
+{
+	float: left;
+	text-align: center;
+	color: white;
+	padding: 14px 16px;
+	display: block;
+	text-decoration: none;
+}
+.nav a:hover
+{
+	background-color: green;
+} */
+*
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #262626;
+	width: 100%;
+	height: 8%;
+	box-sizing: border-box;
+}
+header nav
+{
+	float: right;
+	overflow: hidden;
+	list-style-type: none;
+	margin-right: 0px;
+}
+header nav img{
+	width: 150px;
+	position: absolute;
+	top: 0px;
+	left: 0%;
+}
+header nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right;
+	margin-right: -10px;
+}
+header nav ul li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 0px;
+	list-style: none;
+	position: relative;
+}
+header nav ul li a{
+	height: 50px;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 50px;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+}
+header nav ul li a::before
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	
+}
+header nav ul li:hover
+{
+	
+	display: block;
+	background-color:green;
+}
+.toggle
+{
+	width: 100%;
+	padding: 10px 20px;
+	background: black;
+	text-align: right;
+	box-sizing: border-box;
+}
+ label #btn,label #cancle
+{
+	color: white;
+	font-size: 30px;
+	float: right;
+	line-height:50px;
+	margin-right: 0px;
+	padding: 0 0px;
+	cursor: pointer;
+	 display: none; 
+}
+.check
+{
+	display: none;
+}
+
+
+/*----------------------------------------Banner-----------------------------------------------------------*/
+.mySlides
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
+	width: 100%;
+	height: 300px;  
+	margin-top: 51px;
+	background-position: center;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.text
+{
+	position: absolute;
+    top: 40%;
+    left: 45%;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+.mySlides .text .sub
+{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+/*-----------------------------------Text Code-----------------------------------*/
+.code
+{
+	text-align: center;
+
+}
+.text2
+{
+	padding: 25px 50px 25px 25px;
+}
+
+/*--------------------------------Grid Image Column-----------------------------------*/
+.column
+{
+	float: left;
+	width: 40%;
+	padding: 25px 50px 25px 25px;
+}
+.column img
+{
+	margin-top:12px;
+	margin-left: 10px;
+	height: 300px;
+	width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---------------------------------Footer Section---------------------------------------------*/
+
+.footer-bot
+{
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 200px;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.bottom-txt
+{
+	padding: 40px 50px 35px 25px;
+}
+
+
+
+
+/* Media Query*/
+
+/*@media screen and (max-width:700px)
+{
+	header nav ul
+	{
+		left: 6%;
+	}
+	.column
+{
+	float: left;
+	width: 100%;
+	
+}
+.column img
+{
+
+	width: 100%;
+}
+
+	.footer-bot{
+		width:34%;
+	}
+	
+}
+*/
+@media screen and (max-width:980px)
+{
+	header nav ul{
+		width: 150px;
+		position: absolute;
+		top: 0px;
+		right: 60%;
+		
+	}
+	header nav ul li a
+	{
+		font-size: 14px;
+	}
+	
+	.text{
+		margin-left:-7%;
+		margin-top:-10%;
+	}
+	.column
+{
+	float: left;
+	width: 38%;
+	
+}
+.column img
+{
+
+	width: 100%;
+}
+.footer-bot
+{
+	width:100%
+}
+}
+@media screen and (max-width:699px)
+{
+	label #btn
+	{	
+		display: block;
+		height: 50%;
+		overflow: hidden;
+	}
+	header nav ul{
+		display: block;
+		position: fixed;
+		width: 100%;
+		background: black;
+		top: 60px;
+		left:0;
+		text-align: center;
+	}
+	header nav ul li
+	{
+		display:block;
+	
+	}
+	.text{
+		margin-left:-8%;
+		margin-top:-10%;
+	}
+	.column
+{
+	float: left;
+	width: 34%;
+	
+	
+}
+.column img
+{
+	width:100%;
+}
+.footer-bot
+{
+	width:100%
+}
+}
+
+@media screen and (max-width:500px)
+{
+	
+	.text{
+		margin-left:-30%;
+		margin-top:-10%;
+	}
+	.column
+{
+	float: left;
+	width: 53%;
+	padding: 2px 40px 2px 25px;
+	
+	
+}
+.column img
+{
+	width:135%;
+	height:200px;
+}
+.footer-bot
+{
+	width:100%
+}
+}

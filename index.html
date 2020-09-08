@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyWebsite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar-->  
+ <header>
+  <nav class="nav">
+   
+    <!-- <img src="logo.png" alt="logo"> -->
+    
+    <input type="checkbox" class="check">
+    <label for="check">
+      <li class="fa fa-bars" id="btn"></li>
+      <i class="fa fa-times" id="cancle"></i>
+    
+    <ul>
+      <li><a href="#" class="nav-item" onclick="myHom()" style="background-color: brown;"> Home</a></li>
+      <li><a href="#" class="nav-item" onclick="myUp()">Upload</a></li>
+      <li><a href="#" class="nav-item" onclick="myGel()">Gallery</a></li>
+      <li> <a href="#" class="nav-item " onclick="myCon()">Contect</a></li>
+      <li><a href="#" class="nav-item"  onclick="myAb()"> About</a></li>
+      <li><a href="#" class="nav-item" onclick="myLog()"> Logout</a></li>
+      <li><a href="#" class="nav-item" onclick="mySign()"> SignUp</a></li>
+    </ul>
+  </label>
+   </nav>
+ </header>
+
+<!-- Banner Design-->
+    <div class="mySlides">
+      <div class="text">
+        <h2><p>My Gellery</p></h2>
+        <div class="sub">
+          I am Web Designer.
+        </div>
+      </div>
+    </div>
+
+
+<!-- Text Section -->
+
+  <section class="code" >
+      <h2 style="color: green; font-size: 40px;">The World of Photography</h2>
+      <p style="color: green; font-size: 20px;">We love Photography</p>
+      <p class="text2">I decided to make a Gellary website page to design using the HTML and CSS I was Designed to make this as a project for personal intrest here we only upload the phptos in this system and once youu see it is manageble in Grid manner it is useful for you becasue the data should be Uploade on Server. Moto of desigining this page just for an prectice the JavaScript decide the behave of the Page it should be done later.</p>
+  </section>
+
+  <!-- Grid Gellery -->
+
+  <div class="row">
+   <div class="column">
+    <center>Chair for Sit.</center>
+     <img src="pic07.jpg">
+     <center><label><h3><b>Cup of Chairs</b></h3></label></center>
+   </div>
+   <div class="column">
+    <center>The Festival We Celibrate.</center>
+     <img src="pic09.jpg">
+     <center><label><h3><b>Roof</b></h3></label></center>
+   </div> 
+   <div class="column">
+   <center>The Cup we see Whole World in it.</center>
+     <img src="pic08.jpg">
+     <center><label><h3><b>Cup of Tea</b></h3></label></center>
+   </div>
+   <div class="column">
+   <center>The World We Trevel.</center>
+     <img src="pic02.jpg">
+     <center><label><h3><b>Bus we enjoy</b></h3></label></center>
+   </div>
+  </div>
+
+<!-- Footer Seection -->
+
+  <footer class="footer-bot">
+   <div  class="bottom-txt">
+     <a href="#"><i class="fa fa-facebook-official" onclick="myFb()"></i></a>
+     <a href="#"><i class="fa fa-pinterest-p" onclick="myPin()"></i></a>
+     <a href="#"><i class="fa fa-twitter" onclick="myTwt()"></i></a>
+     <a href="#"><i class="fa fa-flickr" onclick="myFli()"></i></a>
+     <a href="#"><i class="fa fa-linkedin" onclick="myLink()"></i></a>
+
+
+     <p class="w3-medium">
+       Powered by <a href="#" onclick="myBio()">Sunita Maurya</a>
+     </p>
+
+     <p>  "The whole secret of a successful life is to find out what is one's destiny to do, and then do it."</p>
+     <p>"There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed."</p>
+   </div> 
+  
+  </footer>
+  <script>"http://code.jquery.com/jquery-1.11.3.min.js"</script>
+</body>
+</html>
